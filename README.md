@@ -16,9 +16,9 @@ to track:
 
  *How many objects of type Car have been created
 
- *How many times has the property GetLicensePlate been called? 
+ *How many times has the property set method GetLicensePlate been called? 
 
-   *How many times has the method GetPrice been called?
+   *How many times has the property set method GetPrice been called?
    
    Note that it is the “grand totals” we wish to track, not the number of method calls on each object! 
    
