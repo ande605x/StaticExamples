@@ -16,7 +16,7 @@ to track:
 
  *How many objects of type Car have been created
 
- *How many times has the method GetLicensePlate been called? 
+ *How many times has the property GetLicensePlate been called? 
 
    *How many times has the method GetPrice been called?
    
