@@ -3,9 +3,9 @@ using System.Collections.Generic;
 
 namespace StaticExamples
 {
-    public class ListMethods
+    public static class ListMethods
     {
-        public int FindSmallestNumber(List<int> numbers)
+        public static int FindSmallestNumber(List<int> numbers)
         {
             if (numbers.Count == 0)
             {
@@ -25,7 +25,7 @@ namespace StaticExamples
             }
         }
 
-        public int FindAverage(List<int> numbers)
+        public static int FindAverage(List<int> numbers)
         {
             if (numbers.Count == 0)
             {
