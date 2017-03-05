@@ -5,15 +5,21 @@
         private string _licensePlate;
         private int _price;
 
+        private static int ObjectCount = 0;
+        private static int NumGetLicensePlate = 0;
+        private static int NumGetPrice = 0;
+
+
+
         public string LicensePlate
         {
-            get { return _licensePlate; }
+            get { NumGetLicensePlate++; return _licensePlate; }
             set { _licensePlate = value; }
         }
 
         public int Price
         {
-            get { return _price; }
+            get { NumGetPrice++; return _price; }
             set { _price = value; }
         }
 
@@ -21,6 +27,14 @@
         {
             _licensePlate = licensePlate;
             _price = price;
+            ObjectCount++;
+        }
+
+
+        public static void PrintUsageStatistics()
+        {
+            System.Console.WriteLine("Number of carobjects: "+ObjectCount+"\nNumber of GetLicenseplate: "+NumGetLicensePlate+"\nNumber of GetPrice: "+NumGetPrice);
+
         }
     }
 }
